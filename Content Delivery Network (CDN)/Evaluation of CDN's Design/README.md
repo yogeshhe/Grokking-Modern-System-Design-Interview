@@ -14,7 +14,7 @@ CDN achieves high performance by minimizing latency. Some of the key design deci
 Long-tail
 If we monitor the access frequency of our content over some time, we can see a trend where some content is read by many clients (for example, 20% of content asked by 80% of clients), and then there is a long list of the content that very few clients ask for. Such an access distribution is called a long-tailed distribution.
 ```
-[Long-tail](longtail.jpg)
+![Long-tail](longtail.jpg)
 - As was discussed previously, proxy servers can be implemented in layers where if one layer doesn’t have the content, the request can be entertained by the next layer of proxy servers. For example, the edge proxy servers can request the parent proxy servers. Placing proxy servers at specific ISPs could be the best option when most traffic comes from those ISP regions.
 
 
@@ -31,4 +31,5 @@ The design of CDN facilitates scalability in the following ways:
 A CDN ensures no single failure point by carefully implementing maintenance cycles and integrating additional hardware and software when required. Apart from failures, the CDN handles massive traffic loads by equally distributing the load to the edge proxy servers. We can use scrubber servers to prevent DDoS attacks and securely host content. Moreover, we can use the heartbeat protocol to monitor the health of servers and omit faulty servers. Real-time applications also build their own specified CDNs to prevent content leakage problems and securely serve content to their end users.
 ## Conclusion
 Since its inception in the 1990s, the CDN has played a vital role in providing high availability and low-latency content delivery. Nowadays, CDNs are considered a key player in improving the overall performance of giant services.
+
 
